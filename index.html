@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        //Array spreading
+        let num1=[1,2,3];
+        let num2=[4,5,6];
+        let num3=[...num1,...num2];
+        console.log(num3);
+        //removing array items by index
+        let index=2;
+        let array=[2,4,9,16,25,36];
+        array.splice(index,1);
+        console.log("Array elements after removing "+index+" is "+array);
+        //Largest string in an array
+        let arr=["I am akshalin jefita","I am final year CSE student","I am studing in HICET"];
+        function longeststr(){
+            return arr.sort(function(a,b){
+                return b.length-a.length;
+            })[0];
+        }
+        console.log(longeststr())
+        //Inserting element
+        function insert(){
+            let arr1=[1,2,3,4,5];
+            let index1=2;
+            let ele=-78;
+            arr1.splice(index1,0,ele);
+            console.log(arr1);
+        }
+        insert();
+        //Array destructing
+        let name1,name2,rest;
+        [name1,name2]=[90,67];
+        console.log(name1);
+    </script>
+</body>
+</html>
